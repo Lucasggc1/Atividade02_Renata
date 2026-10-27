@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- fonte do Google Fonts e o arquivo de estilo externo (style.css) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href="style.css">
+    <title>Montando um PC</title>
+</head>
+<body>
+
+    <header id="topo">
+        <h1>🖥️ Montando um PC</h1>
+        <p>Hardware é um assunto que eu gosto bastante. Nesta página eu explico quais são as peças principais de um computador e como é feita a montagem.</p>
+
+        <nav>
+            <a href="#pecas">As peças</a> |
+            <a href="#montagem">Passo a passo</a> |
+            <a href="#meu-pc">Meu PC</a> |
+            <a href="#saiba-mais">Saiba mais</a> |
+            <a href="cuidados.html">Cuidados com o PC</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="caixa">
+            <h2>Por que montar o próprio PC?</h2>
+            <p>Quando você monta o próprio computador, você escolhe cada peça de acordo com o que vai usar e com quanto pode gastar. Quem joga pode investir mais na placa de vídeo, e quem usa programas pesados pode investir mais no processador e na memória.</p>
+            <p>Outra vantagem é o upgrade. Em vez de trocar o computador inteiro, dá para trocar só uma peça, como a placa de vídeo, e vender a peça antiga.</p>
+        </section>
+
+        <section id="pecas" class="caixa">
+            <h2>🔧 As peças principais</h2>
+            <p>Um PC de mesa é formado basicamente por estas peças:</p>
+            <ul>
+                <li><strong>Processador (CPU):</strong> executa as instruções dos programas, é o "cérebro" do computador.</li>
+                <li><strong>Placa-mãe:</strong> liga todas as peças entre si. O processador, a memória e o SSD ficam ligados nela.</li>
+                <li><strong>Memória RAM:</strong> guarda os dados dos programas que estão abertos. Quando o PC desliga, ela é apagada.</li>
+                <li><strong>Placa de vídeo (GPU):</strong> processa as imagens. É uma das peças mais importantes para quem joga.</li>
+                <li><strong>SSD ou HD:</strong> guarda o sistema operacional e os arquivos, mesmo com o PC desligado. O SSD é bem mais rápido que o HD.</li>
+                <li><strong>Fonte:</strong> transforma a energia da tomada em uma energia que as peças conseguem usar.</li>
+                <li><strong>Gabinete:</strong> é a "caixa" onde todas as peças ficam montadas.</li>
+            </ul>
+
+            <figure>
+                <img src="esquema-pc.png" alt="Desenho simples de uma placa-mãe vista de cima, mostrando onde ficam o processador, a memória RAM, o SSD M.2 e a placa de vídeo, com a fonte ao lado ligada por cabos." width="600" height="360">
+            </figure>
+
+            <aside>
+                <p>💡 <strong>Dica:</strong> antes de comprar, confira se o processador é compatível com a placa-mãe (o soquete precisa ser o mesmo) e se a memória RAM é do tipo que a placa aceita (DDR4 ou DDR5).</p>
+            </aside>
+        </section>
+
+        <section id="montagem" class="caixa">
+            <h2>📋 Passo a passo da montagem</h2>
+            <p>Essa é uma ordem bem comum, mas ela pode mudar um pouco dependendo do gabinete e do cooler. Por isso, vale <em>sempre</em> olhar o manual da placa-mãe.</p>
+            <ol>
+                <li>Separar as peças e uma chave Phillips em uma mesa limpa e tomar cuidado com a eletricidade estática (por exemplo, não montar em cima de tapete).</li>
+                <li>Encaixar o processador no soquete da placa-mãe, alinhando o triângulo do canto do processador com a marcação do soquete.</li>
+                <li>Instalar o cooler em cima do processador (com pasta térmica, se o cooler não vier com ela já aplicada).</li>
+                <li>Encaixar os pentes de memória RAM nos slots que o manual da placa-mãe indica.</li>
+                <li>Encaixar e prender o SSD M.2 na placa-mãe.</li>
+                <li>Colocar a placa-mãe dentro do gabinete e parafusar.</li>
+                <li>Instalar a fonte e ligar os cabos dela na placa-mãe (o de 24 pinos e o de energia do processador).</li>
+                <li>Encaixar a placa de vídeo no slot PCI Express e ligar o cabo de energia dela, se ela precisar.</li>
+                <li>Ligar o PC, entrar na BIOS para ver se todas as peças foram reconhecidas e depois instalar o sistema operacional.</li>
+            </ol>
+        </section>
+
+        <article id="meu-pc" class="caixa">
+            <h2>🎮 O meu PC atual</h2>
+            <p>Estas são as principais peças do PC que eu uso hoje para jogar:</p>
+            <ul>
+                <li>Processador: AMD Ryzen 7 9800X3D</li>
+                <li>Placa de vídeo: NVIDIA GeForce RTX 5070 Ti</li>
+                <li>Placa-mãe: B650M-E</li>
+            </ul>
+        </article>
+
+        <section id="saiba-mais" class="caixa">
+            <h2>🔗 Saiba mais</h2>
+            <p>Se quiser ler mais sobre a peça que conecta todas as outras, veja o artigo <a href="https://pt.wikipedia.org/wiki/Placa-m%C3%A3e" target="_blank"><cite>Placa-mãe</cite></a> na Wikipédia (abre em uma nova aba).</p>
+            <p>Também fiz uma página sobre os <a href="cuidados.html">cuidados com o PC</a> depois que ele já está montado.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><a href="#topo">⬆️ Voltar ao topo</a></p>
+        <p>Página feita por Lucas Gongora Garcia Cid<br>Desenvolvimento Web - UniFil</p>
+    </footer>
+
+</body>
+</html>
